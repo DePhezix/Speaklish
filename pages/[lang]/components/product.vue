@@ -34,15 +34,18 @@
 
 <script setup lang="ts">
 import type { cardType } from '~/types/frontend';
+import TelegramImg from '../assets/imgs/telegram.avif'
+import AIImg from '../assets/imgs/AI.avif'
+import IeltsImg from '../assets/imgs/ielts.avif'
 
 const cards: cardType[] = [{
-    imgSrc: '/_nuxt/pages/[lang]/assets/imgs/telegram.avif',
+    imgSrc: TelegramImg,
     description: 'Easy to use our product through the <b>Telegram bot</b>'
 }, {
-    imgSrc: '/_nuxt/pages/[lang]/assets/imgs/AI.avif',
+    imgSrc: AIImg,
     description: 'An innovative <b>AI-based</b> language practice platform'
 }, {
-    imgSrc: '/_nuxt/pages/[lang]/assets/imgs/ielts.avif',
+    imgSrc: IeltsImg,
     description: '<b>Testing IELTS</b> speaking skills and get excellent feedback'
 }]
 </script>
