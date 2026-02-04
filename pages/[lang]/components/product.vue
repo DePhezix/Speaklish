@@ -36,13 +36,13 @@
 import type { cardType } from '~/types/frontend';
 
 const cards: cardType[] = [{
-    imgSrc: '_nuxt/pages/[lang]/assets/imgs/telegram.avif',
+    imgSrc: '/_nuxt/pages/[lang]/assets/imgs/telegram.avif',
     description: 'Easy to use our product through the <b>Telegram bot</b>'
 }, {
-    imgSrc: '_nuxt/pages/[lang]/assets/imgs/AI.avif',
+    imgSrc: '/_nuxt/pages/[lang]/assets/imgs/AI.avif',
     description: 'An innovative <b>AI-based</b> language practice platform'
 }, {
-    imgSrc: '_nuxt/pages/[lang]/assets/imgs/ielts.avif',
+    imgSrc: '/_nuxt/pages/[lang]/assets/imgs/ielts.avif',
     description: '<b>Testing IELTS</b> speaking skills and get excellent feedback'
 }]
 </script>
