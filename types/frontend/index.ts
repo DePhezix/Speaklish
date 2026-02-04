@@ -1,0 +1,5 @@
+export * from './general'
+export * from './product'
+export * from './howItWorks'
+export * from './evaluations'
+export * from './footer'

@@ -2,4 +2,15 @@
 @tailwind utilities;
 
 @layer components {
+  .sf-display {
+    font-family: "SF Pro Display", sans-serif
+  }
+}
+body {
+  background-color: #091b29;
+}
+
+* {
+  color: #fff;
+  font-family: "SF Pro Text", sans-serif;
 }

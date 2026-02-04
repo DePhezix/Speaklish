@@ -1,0 +1,1 @@
+export type languageTypes = 'en' | 'ru' | 'uz';
