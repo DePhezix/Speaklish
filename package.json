@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "@nuxt/image": "1.0.0-rc.3",
+    "@nuxtjs/i18n": "^10.2.1",
     "@pinia/nuxt": "^0.4.8",
     "nuxt-svgo": "^4.2.6",
     "pinia": "^2.0.34",

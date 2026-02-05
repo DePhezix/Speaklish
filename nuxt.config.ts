@@ -12,7 +12,12 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@pinia/nuxt", "@nuxt/devtools", "nuxt-svgo", "@nuxt/image"],
+  modules: [
+    "@pinia/nuxt",
+    "@nuxt/devtools",
+    "nuxt-svgo",
+    "@nuxt/image",
+  ],
   css: [
     "~/assets/styles/css/tailwind.css",
     "~/assets/styles/scss/main.scss",

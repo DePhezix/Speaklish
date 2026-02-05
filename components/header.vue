@@ -4,13 +4,13 @@
   >
     <Logo class="w-[199px]" />
     <div class="flex gap-[32px] items-center leading-[100%]">
-      <NuxtLink to="#home">Home</NuxtLink>
-      <NuxtLink to="#product">Product</NuxtLink>
-      <NuxtLink to="#howItWorks">How it works</NuxtLink>
-      <NuxtLink to="#evaluation">Evaluation</NuxtLink>
-      <NuxtLink to="#audience">Audience</NuxtLink>
-      <NuxtLink to="#users">Our Users</NuxtLink>
-      <NuxtLink to="#price">Price</NuxtLink>
+      <NuxtLink to="#home">{{ $t("nav.home") }}</NuxtLink>
+      <NuxtLink to="#product">{{ $t("nav.product") }}</NuxtLink>
+      <NuxtLink to="#howItWorks">{{ $t("nav.howItWorks") }}</NuxtLink>
+      <NuxtLink to="#evaluation">{{ $t("nav.evaluation") }}</NuxtLink>
+      <NuxtLink to="#audience">{{ $t("nav.audience") }}</NuxtLink>
+      <NuxtLink to="#users">{{ $t("nav.users") }}</NuxtLink>
+      <NuxtLink to="#price">{{ $t("nav.price") }}</NuxtLink>
       <button
         class="flex items-center gap-[10px] rounded-[16px] py-[12px] px-[16px] bg-white/10 relative transition-all duration-250 ease-linear"
         :class="{ '!bg-[#08da83]': languageOptionsOpen }"
@@ -52,7 +52,7 @@
       target="_blank"
       class="rounded-[36px] px-[24px] py-[16px] bg-[#08da83] h-min w-min"
     >
-      Start
+      {{ $t("nav.start") }}
     </NuxtLink>
   </nav>
 </template>
@@ -62,10 +62,14 @@ import Logo from "~/assets/svgs/logo.svg?component";
 import Arrow from "~/assets/svgs/arrow.svg?component";
 import Tick from "~/assets/svgs/tick.svg?component";
 
+import { useI18n } from "vue-i18n";
+
 import type { languageTypes } from "~/types/frontend";
 
 const languageOptionsOpen = ref<boolean>(false);
 const route = useRoute();
+
+const { t } = useI18n();
 
 const displayMap: Record<languageTypes, string> = {
   en: "Eng",

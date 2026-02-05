@@ -1,5 +1,87 @@
 {
-    "main": {
-        "name": "Nuxt 3"
+  "nav": {
+    "home": "Bosh sahifa",
+    "product": "Mahsulot",
+    "howItWorks": "Qanday ishlaydi",
+    "evaluation": "Baholash",
+    "audience": "Auditoriya",
+    "users": "Foydalanuvchilarimiz",
+    "price": "Narx",
+    "start": "Boshlash"
+  },
+  "hero": {
+    "tag": "AI texnologiyasi",
+    "title": "<span class='sf-display font-extrabold'>Speaklish</span> - sizning AI asosidagi IELTS Speaking baholovchingiz",
+    "start": "Keling boshlaylik"
+  },
+  "product": {
+    "tag": "Mahsulot",
+    "title": "<span class='text-[#08da83]'>Speaklish</span> nima?",
+    "desc": "<span class='font-[700] text-[#6A6A6A] tracking-[-0.2px]'>Speaklish</span> - bu IELTS Speaking ko'nikmalarini baholash uchun maxsus ishlab chiqilgan innovatsion AI asosidagi til amaliyoti platformasidir. U to'liq IELTS Speaking sinov testlarini o'tkazish va baholash uchun qulay virtual imtihon oluvchi sifatida ishlaydi.",
+    "what1": "Mahsulotimizdan <b>Telegram bot</b> orqali foydalanish oson",
+    "what2": "<b>AI asosida</b> ishlab chiqilgan innovatsion til amaliyoti platformasi",
+    "what3": "<b>IELTS Speaking</b> ko'nikmalarini sinash va ajoyib fikr-mulohazalar olish"
+  },
+  "howItWorks": {
+    "title": "Bu qanday <span class='text-[#08da83]'>ishlaydi</span>?",
+    "desc1_2": "Botni ishga tushiring, 8-12 daqiqaga sokin joyni toping, chunki u haqiqiy sinov testi kabi davom etadi",
+    "desc3_4": "2-qismga kelganingizda, eslatmalar yozing va taxminan 2 daqiqalik nutq uchun g'oyalaringizni o'ylash uchun 1 daqiqadan foydalaning, bot javoblaringizni qachon yozish kerakligini sizga xabar qiladi",
+    "desc5_6": "3-qismni tugatganingizdan so'ng, tizim nutqingiz va natijalaringizni baholashi uchun 1-2 daqiqa kuting."
+  },
+  "evaluations": {
+    "title": "Speaklish tomonidan baholash",
+    "candidate1": {
+      "feedback": "Fikr-mulohaza",
+      "feedbackDesc": "Nomzod ingliz tilini yaxshi biladi va murakkab fikrlarni aniq ifodalay oladi. Biroq, bir nechta kichik xatolar va noqulay iboralar mavjud. Masalan, 'hard and soft-skinned fiction' iborasi noaniq va 'right up my avenue' iborasi 'right up my alley' bo'lishi kerak. Ikkinchi qismda 'help your brother underwater and its brother to lure a man' iborasi chalkash va ehtimol noto'g'ri tushunilgan. Nomzod 'you just need a snorkel to help you breathe underwater and a mask to prevent water from coming into your eyes' deyishi kerak edi. Uchinchi qismda 'I think swimming is the most famous water sport in Ferdinand' iborasi noaniq, chunki 'Ferdinand' ma'lum joy yoki kontekst emas. Nomzod 'Ferdinand' nimani anglatishini aniqlashtirishi kerak",
+      "topicWords": "Nomzod tomonidan ishlatilgan maxsus mavzu so'zlari (esga olish arziydi):",
+      "topicWordsDesc": "extraterrestrials (yerdan tashqari mavjudotlar), starship troopers (kosmik desantchilar), Celestial events (samoviy hodisalar), heavenly bodies (samoviy jismlar), Coronal mass Objection (koronal massa chiqishi), star formation (yulduz shakllanishi), astronaut (kosmonavt), snorkeling (snorkling), submarine landscape (suv osti manzarasi), Great Barrier Reef (Buyuk to'siq rifi), economical (iqtisodiy), drowning (cho'kish), comfort zone (qulaylik zonasi).",
+      "suggestedWords": "Tavsiya etilgan kamroq ishlatiladigan mavzuga oid so'zlar, idiomalar yoki birikmalar:",
+      "suggestedWordsDesc": "science fiction (ilmiy fantastika), interstellar travel (yulduzlararo sayohat), celestial bodies (samoviy jismlar), astronomical phenomena (astronomik hodisalar), space exploration (koinotni o'rganish), marine biodiversity (dengiz biologik xilma-xilligi), coral reef (marjon rifi), aquatic transportation (suv transporti), water safety (suvda xavfsizlik), physical fitness (jismoniy tayyorgarlik), recreational activities (dam olish mashg'ulotlari)"
+    },
+    "candidate2": {
+      "feedback": "Fikr-mulohaza",
+      "feedbackDesc": "Nomzod ingliz tilini yaxshi tushunadi, lekin yaxshilash mumkin bo'lgan bir nechta sohalar mavjud. Nomzod iboralar va so'zlarni takrorlashga moyil bo'lib, bu suhbat oqimini buzadi. Lug'at zahirasi juda oddiy va murakkab so'zlar va iboralardan foydalanish orqali yaxshilanishi mumkin. Nomzod shuningdek, bir nechta grammatik xatolarga yo'l qo'yadi, masalan, noto'g'ri fe'l zamonlari va gap tuzilmalari. Talaffuz umuman aniq, lekin noto'g'ri yoki noaniq talaffuz qilingan bir nechta so'zlar mavjud.",
+      "fluency": "Ravonlik",
+      "fluencyDesc": "Nomzodning nutqi ko'pincha ikkilanuvchi va takrorlanuvchi bo'lib, suhbat oqimini buzadi.",
+      "vocabulary": "Lug'at zahirasi",
+      "vocabularyDesc": "Nomzod cheklangan lug'at zahirasidan foydalanadi va ko'pincha bir xil so'zlar va iboralarni takrorlaydi.",
+      "grammar": "Grammatika",
+      "grammarDesc": "Nomzod noto'g'ri fe'l zamonlari va gap tuzilmalarini o'z ichiga olgan bir nechta grammatik xatolarga yo'l qo'yadi.",
+      "pronunciation": "Talaffuz",
+      "pronunciationDesc": "Nomzodning talaffuzi umuman aniq, lekin noto'g'ri yoki noaniq talaffuz qilingan bir nechta so'zlar mavjud.",
+      "topicWords": "Nomzod tomonidan ishlatilgan maxsus mavzu so'zlari (esga olish arziydi):",
+      "topicWordsDesc": "T manager (menejer), football player (futbolchi), translator (tarjimon), Makkah (Makka), math subject (matematika), incorrect information (noto'g'ri ma'lumot).",
+      "suggestedWords": "Tavsiya etilgan kamroq ishlatiladigan mavzuga oid so'zlar, idiomalar yoki birikmalar:",
+      "suggestedWordsDesc": "Aspiration (intilish), career goals (martaba maqsadlari), misinformation (noto'g'ri ma'lumot), verify (tekshirish), digital communication (raqamli aloqa), multilingual (ko'p tilli), cultural heritage (madaniy meros)."
     }
+  },
+  "audience": {
+    "title": "Platformaning <span class='text-[#08da83]'>auditoriyasi</span>",
+    "desc": "Bizning jamoamiz ingliz tilini bilishning global ahamiyatini tan oluvchi turli sohalardan kelgan professionallarni o'z ichiga oladi. Ular o'z til ko'nikmalarini xalqaro maydonda namoyish etish orqali martabalarini yangi cho'qqilarga olib chiqishga tayyorlanmoqdalar."
+  },
+  "users": {
+    "title": "Bizning <span class='text-[#08da83]'>foydalanuvchilarimiz</span>",
+    "title2": "Biz erishdik",
+    "users": "Foydalanuvchilar",
+    "activeUsers": "Faol foydalanuvchilar",
+    "title3": "Lidlar sifati",
+    "desc": "<span class='text-[#08da83] font-bold'>IELTS</span> topshiradiganlar",
+    "title4": "O'rtacha ball"
+  },
+  "price": {
+    "title": "Narx tuzilmasi",
+    "card1": {
+      "type": "BIR MARTALIK",
+      "payment": "har bir sessiya uchun"
+    },
+    "card2": {
+      "type": "PRO",
+      "payment": "Oylik obuna"
+    },
+    "start": "Boshlash"
+  },
+  "footer": {
+    "title": "Speaklish bilan birinchi IELTS Speaking testingizni topshiring",
+    "start": "Keling boshlaylik"
+  }
 }

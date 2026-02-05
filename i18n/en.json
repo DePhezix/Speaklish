@@ -1,3 +1,87 @@
 {
-    
+  "nav": {
+    "home": "Home",
+    "product": "Product",
+    "howItWorks": "How it works",
+    "evaluation": "Evaluation",
+    "audience": "Audience",
+    "users": "Our Users",
+    "price": "Price",
+    "start": "Start"
+  },
+  "hero": {
+    "tag": "AI technology",
+    "title": "<span class='sf-display font-extrabold'>Speaklish</span> is your AI Powered IELTS Speaking Evaluator",
+    "start": "Lets get started"
+  },
+  "product": {
+    "tag": "Product",
+    "title": "What is <span class='text-[#08da83]'>Speaklish</span>?",
+    "desc": "What is <span class='font-[700] text-[#6A6A6A] tracking-[-0.2px]'>Speaklish</span> is an innovative AI-based language practice platform, designed specifically to evaluate IELTS Speaking skills. It acts as a convenient virtual examiner to guide and judge full IELTS speaking mock tests.",
+    "what1": "Easy to use our product through the <b>Telegram bot</b>",
+    "what2": "An innovative <b>AI-based</b> language practice platform",
+    "what3": "<b>Testing IELTS</b> speaking skills and get excellent feedback"
+  },
+  "howItWorks": {
+    "title": "How does it <span class='text-[#08da83]'>work</span>?",
+    "desc1_2": "Start the bot, get into quite place for 8-12 minute as it lasts like real mock",
+    "desc3_4": "When you come to part 2, take some notes, and use 1 minute time for brainstorming your ideas for about 2 minutes speech, bot will notify you when to record your answers",
+    "desc5_6": "With finishing the part 3, wait for 1-2 minutes to system evaluate your speech and performance."
+  },
+  "evaluations": {
+    "title": "Evaluations by Speaklish",
+    "candidate1": {
+      "feedback": "Feedback",
+      "feedbackDesc": "The candidate has a good command of English and is able to express complex ideas with clarity. However, there are a few minor errors and awkward phrases. For instance, the phrase 'hard and soft-skinned fiction' is unclear and the phrase 'right up my avenue' should be 'right up my alley'. In the second part, the phrase 'help your brother underwater and its brother to lure a man' is confusing and likely a miscommunication. The candidate should have said 'you just need a snorkel to help you breathe underwater and a mask to prevent water from coming into your eyes. In the third part, the phrase I think swimming is the most famous water sport in Ferdinand is unclear as 'Ferdinand' is not a known location or context. The candidate should specify what 'Ferdinand' refers to",
+      "topicWords": "Specific topic-words used by candidate(worth-to-mention):",
+      "topicWordsDesc": "extraterrestrials, starship troopers, Celestial events, heavenly bodies, Coronal mass Objection, star formation, astronaut, snorkeling, submarine landscape, Great Barrier Reef, economical, drowning, comfort zone.",
+      "suggestedWords": "Suggested less used topic-related words, idioms or collocations:",
+      "suggestedWordsDesc": "science fiction, interstellar travel, celestial bodies, astronomical phenomena, space exploration, marine biodiversity, coral reef, aquatic transportation, water safety, physical fitness, recreational activities"
+    },
+    "candidate2": {
+      "feedback": "Feedback",
+      "feedbackDesc": "The candidate has a good understanding of the English language, but there are several areas where improvements can be made. The candidate tends to repeat phrases and words, which disrupts the flow of the conversation. The use of vocabulary is quite basic and could be improved by using more complex words and phrases. The candidate also makes several grammatical errors, such as incorrect verb tenses and sentence structures. The pronunciation is generally clear, but there are a few words that are mispronounced or unclear.",
+      "fluency": "Fluency",
+      "fluencyDesc": "The candidate's speech is often hesitant and repetitive, disrupting the flow of the conversation.",
+      "vocabulary": "Vocabulary",
+      "vocabularyDesc": "The candidate uses a limited range of vocabulary and often repeats the same words and phrases.",
+      "grammar": "Grammar",
+      "grammarDesc": "The candidate makes several grammatical errors, including incorrect verb tenses and sentence structures.",
+      "pronunciation": "Pronunciation",
+      "pronunciationDesc": "The candidate's pronunciation is generally clear, but there are a few words that are mispronounced or unclear.",
+      "topicWords": "Specific topic-words used by candidate(worth-to-mention):",
+      "topicWordsDesc": "T manager, football player, translator, Makkah, math subject, incorrect information.",
+      "suggestedWords": "Suggested less used topic-related words, idioms or collocations:",
+      "suggestedWordsDesc": "Aspiration, career goals, misinformation, verify, digital communication, multilingual, cultural heritage."
+    }
+  },
+  "audience": {
+    "title": "<span class='text-[#08da83]'>Audience</span> of Platform",
+    "desc": "Our community includes professionals from various industries who recognize the global importance of English proficiency. They're preparing to take their careers to new heights by showcasing their language skills on the international stage."
+  },
+  "users": {
+    "title": "Our <span class='text-[#08da83]'>Users</span>",
+    "title2": "We reached",
+    "users": "Users",
+    "activeUsers": "Active Users",
+    "title3": "Leads quality",
+    "desc": "Those who will get <span class='text-[#08da83] font-bold'>IELTS</span>",
+    "title4": "Average score"
+  },
+  "price": {
+    "title": "Pricing structure",
+    "card1": {
+      "type": "ONCE",
+      "payment": "per session"
+    },
+    "card2": {
+      "type": "PRO",
+      "payment": "Monthly subscription"
+    },
+    "start": "Get started"
+  },
+  "footer": {
+    "title": "Take your first IELTS speaking test with Speklish",
+    "start": "Lets get started"
+  }
 }

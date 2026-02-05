@@ -1,24 +1,31 @@
 <template>
-    <NuxtLayout>
-      <div>
-        <NuxtPage />
-      </div>
-    </NuxtLayout>
-  </template>
-  
-  <script lang="ts" setup>
-  import { onMounted } from 'vue'
-  import { useRoute } from 'vue-router'
-  
-  const route = useRoute()
-  
-  if ('setup' in route.query) {
-    throw new Error('error in setup')
+  <NuxtLayout>
+    <div>
+      <NuxtPage />
+    </div>
+  </NuxtLayout>
+</template>
+
+<script lang="ts" setup>
+import { useI18n } from "vue-i18n";
+
+const { locale } = useI18n();
+const route = useRoute();
+const langParam = route.params.lang;
+
+onMounted(() => {
+  if (langParam && typeof langParam === "string") {
+    locale.value = langParam;
   }
-  if ('mounted' in route.query) {
-    onMounted(() => {
-      throw new Error('error in mounted')
-    })
-  }
-  
-  </script>
+});
+
+watch(
+  () => route.params.lang,
+  (newLang) => {
+    if (newLang && typeof newLang === "string") {
+      locale.value = newLang;
+    }
+  },
+  { immediate: true },
+);
+</script>

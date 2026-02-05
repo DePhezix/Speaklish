@@ -6,7 +6,7 @@
       <h1
         class="sf-display font-extrabold text-[64px] text-[#091B29] leading-[119%]"
       >
-        Evaluations by Speaklish
+        {{ $t("evaluations.title") }}
       </h1>
       <div class="flex gap-[24px]">
         <div class="flex flex-col gap-[16px]">
@@ -60,24 +60,12 @@
             <h3
               class="font-bold text-[20px] leading-[28px] tracking-[-0.5px] text-[#091B29]"
             >
-              Feedback
+              {{ $t("evaluations.candidate1.feedback") }}
             </h3>
             <p
               class="text-[14px] leading-[20px] tracking-[-0.2px] text-[#5A5A5A]"
             >
-              The candidate has a good command of English and is able to express
-              complex ideas with clarity. However, there are a few minor errors
-              and awkward phrases. For instance, the phrase "hard and
-              soft-skinned fiction" is unclear and the phrase "right up my
-              avenue" should be "right up my alley". In the second part, the
-              phrase "help your brother underwater and its brother to lure a
-              man" is confusing and likely a miscommunication. The candidate
-              should have said "you just need a snorkel to help you breathe
-              underwater and a mask to prevent water from coming into your
-              eyes". In the third part, the phrase "I think swimming is the most
-              famous water sport in Ferdinand" is unclear as "Ferdinand" is not
-              a known location or context. The candidate should specify what
-              "Ferdinand" refers to
+              {{ $t("evaluations.candidate1.feedbackDesc") }}
             </p>
           </div>
           <div class="flex gap-[16px] h-full">
@@ -87,15 +75,12 @@
               <h3
                 class="font-bold text-[20px] leading-[28px] tracking-[-0.5px] text-[#091B29]"
               >
-                Specific topic-words used by candidate(worth-to-mention):
+                {{ $t("evaluations.candidate1.topicWords") }}
               </h3>
               <p
                 class="text-[14px] leading-[20px] tracking-[-0.2px] text-[#5A5A5A]"
               >
-                extraterrestrials, starship troopers, Celestial events, heavenly
-                bodies, Coronal mass Objection, star formation, astronaut,
-                snorkeling, submarine landscape, Great Barrier Reef, economical,
-                drowning, comfort zone.
+                {{ $t("evaluations.candidate1.topicWordsDesc") }}
               </p>
             </div>
             <div
@@ -104,15 +89,12 @@
               <h3
                 class="font-bold text-[20px] leading-[28px] tracking-[-0.5px] text-[#091B29]"
               >
-                Suggested less used topic-related words, idioms or collocations:
+                {{ $t("evaluations.candidate1.suggestedWords") }}
               </h3>
               <p
                 class="text-[14px] leading-[20px] tracking-[-0.2px] text-[#5A5A5A]"
               >
-                science fiction, interstellar travel, celestial bodies,
-                astronomical phenomena, space exploration, marine biodiversity,
-                coral reef, aquatic transportation, water safety, physical
-                fitness, recreational activities
+                {{ $t("evaluations.candidate1.suggestedWordsDesc") }}
               </p>
             </div>
           </div>
@@ -125,7 +107,7 @@
       <h1
         class="sf-display font-extrabold text-[64px] text-[#091B29] leading-[119%]"
       >
-        Evaluations by Speaklish
+        {{ $t("evaluations.title") }}
       </h1>
       <div class="flex gap-[24px]">
         <div class="flex flex-col gap-[16px]">
@@ -179,20 +161,12 @@
             <h3
               class="font-bold text-[20px] leading-[28px] tracking-[-0.5px] text-[#091B29]"
             >
-              Feedback
+              {{ $t("evaluations.candidate2.feedback") }}
             </h3>
             <p
               class="text-[14px] leading-[20px] tracking-[-0.2px] text-[#5A5A5A]"
             >
-              The candidate has a good understanding of the English language,
-              but there are several areas where improvements can be made. The
-              candidate tends to repeat phrases and words, which disrupts the
-              flow of the conversation. The use of vocabulary is quite basic and
-              could be improved by using more complex words and phrases. The
-              candidate also makes several grammatical errors, such as incorrect
-              verb tenses and sentence structures. The pronunciation is
-              generally clear, but there are a few words that are mispronounced
-              or unclear.
+              {{ $t("evaluations.candidate2.feedbackDesc") }}
             </p>
           </div>
           <div class="flex gap-[16px] h-full">
@@ -202,13 +176,12 @@
               <h3
                 class="font-bold text-[20px] leading-[28px] tracking-[-0.5px] text-[#091B29]"
               >
-                Fluency
+                {{ $t("evaluations.candidate2.fluency") }}
               </h3>
               <p
                 class="text-[14px] leading-[20px] tracking-[-0.2px] text-[#5A5A5A]"
               >
-                The candidate's speech is often hesitant and repetitive,
-                disrupting the flow of the conversation.
+                {{ $t("evaluations.candidate2.fluencyDesc") }}
               </p>
             </div>
             <div
@@ -217,45 +190,12 @@
               <h3
                 class="font-bold text-[20px] leading-[28px] tracking-[-0.5px] text-[#091B29]"
               >
-                Vocabulary:
+                {{ $t("evaluations.candidate2.vocabulary") }}
               </h3>
               <p
                 class="text-[14px] leading-[20px] tracking-[-0.2px] text-[#5A5A5A]"
               >
-                The candidate uses a limited range of vocabulary and often
-                repeats the same words and phrases.
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-[16px] h-full">
-            <div
-              class="flex flex-1 flex-col h-min rounded-[24px] p-[24px] gap-[6px] bg-[#F8F8F8]"
-            >
-              <h3
-                class="font-bold text-[20px] leading-[28px] tracking-[-0.5px] text-[#091B29]"
-              >
-                Grammar
-              </h3>
-              <p
-                class="text-[14px] leading-[20px] tracking-[-0.2px] text-[#5A5A5A]"
-              >
-                The candidate makes several grammatical errors, including
-                incorrect verb tenses and sentence structures.
-              </p>
-            </div>
-            <div
-              class="flex flex-1 flex-col h-min rounded-[24px] p-[24px] gap-[6px] bg-[#F8F8F8]"
-            >
-              <h3
-                class="font-bold text-[20px] leading-[28px] tracking-[-0.5px] text-[#091B29]"
-              >
-                Pronunciation:
-              </h3>
-              <p
-                class="text-[14px] leading-[20px] tracking-[-0.2px] text-[#5A5A5A]"
-              >
-                The candidate's pronunciation is generally clear, but there are
-                a few words that are mispronounced or unclear.
+                {{ $t("evaluations.candidate2.vocabularyDesc") }}
               </p>
             </div>
           </div>
@@ -266,13 +206,12 @@
               <h3
                 class="font-bold text-[20px] leading-[28px] tracking-[-0.5px] text-[#091B29]"
               >
-                Specific topic-words used by the candidate(worth-to-mention):
+                {{ $t("evaluations.candidate2.grammar") }}
               </h3>
               <p
                 class="text-[14px] leading-[20px] tracking-[-0.2px] text-[#5A5A5A]"
               >
-                T manager, football player, translator, Makkah, math subject,
-                incorrect information.
+                {{ $t("evaluations.candidate2.grammarDesc") }}
               </p>
             </div>
             <div
@@ -281,14 +220,42 @@
               <h3
                 class="font-bold text-[20px] leading-[28px] tracking-[-0.5px] text-[#091B29]"
               >
-                Suggested less used topic-related words, idioms or
-                collocations::
+                {{ $t("evaluations.candidate2.pronunciation") }}
               </h3>
               <p
                 class="text-[14px] leading-[20px] tracking-[-0.2px] text-[#5A5A5A]"
               >
-                Aspiration, career goals, misinformation, verify, digital
-                communication, multilingual, cultural heritage.
+                {{ $t("evaluations.candidate2.pronunciationDesc") }}
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-[16px] h-full">
+            <div
+              class="flex flex-1 flex-col rounded-[24px] p-[24px] gap-[6px] bg-[#F8F8F8]"
+            >
+              <h3
+                class="font-bold text-[20px] leading-[28px] tracking-[-0.5px] text-[#091B29]"
+              >
+                {{ $t("evaluations.candidate2.topicWords") }}
+              </h3>
+              <p
+                class="text-[14px] leading-[20px] tracking-[-0.2px] text-[#5A5A5A]"
+              >
+                {{ $t("evaluations.candidate2.topicWordsDesc") }}
+              </p>
+            </div>
+            <div
+              class="flex flex-1 flex-col rounded-[24px] p-[24px] gap-[6px] bg-[#F8F8F8]"
+            >
+              <h3
+                class="font-bold text-[20px] leading-[28px] tracking-[-0.5px] text-[#091B29]"
+              >
+                {{ $t("evaluations.candidate2.suggestedWords") }}
+              </h3>
+              <p
+                class="text-[14px] leading-[20px] tracking-[-0.2px] text-[#5A5A5A]"
+              >
+                {{ $t("evaluations.candidate2.suggestedWordsDesc") }}
               </p>
             </div>
           </div>
@@ -300,6 +267,10 @@
 
 <script setup lang="ts">
 import type { scoreType } from "~/types/frontend";
+
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
 
 const candidate1Scores: scoreType = {
   fluency: 8.0,

@@ -4,7 +4,7 @@
     id="price"
   >
     <h1 class="font-extrabold sf-display text-[64px] leading-[100%]">
-      Pricing Structure
+      {{ $t("price.title") }}
     </h1>
     <div class="flex gap-[64px] justify-center">
       <div
@@ -14,7 +14,7 @@
           disabled
           class="h-[48px] rounded-[36px] border p-[24px] text-[#08DA83] border-[#08DA83] w-fit flex items-center font-bold text-[24px] leading-[24px]"
         >
-          ONCE
+          {{ $t("price.card1.type") }}
         </button>
         <div class="flex flex-col gap-[4px] w-full">
           <h2
@@ -31,7 +31,7 @@
         <p
           class="text-center text-[24px] w-full leading-[28px] tracking-[-0.5px] text-[#091B29]"
         >
-          Per session
+          {{ $t("price.card1.payment") }}
         </p>
         <NuxtLink
           to="https://t.me/speaklishbot"
@@ -39,7 +39,7 @@
           target="_blank"
           class="rounded-[36px] text-center leading-[24px] py-[16px] px-[24px] bg-[#08DA83] w-full hover:bg-[#18B368] transition-all duration-500"
         >
-          Get started
+          {{ $t("price.start") }}
         </NuxtLink>
       </div>
       <div
@@ -49,7 +49,7 @@
           disabled
           class="h-[48px] rounded-[36px] border p-[24px] text-[#08DA83] border-[#08DA83] w-fit flex items-center font-bold text-[24px] leading-[24px]"
         >
-          PRO
+          {{ $t("price.card2.type") }}
         </button>
         <div class="flex flex-col gap-[4px] w-full">
           <h2
@@ -66,7 +66,7 @@
         <p
           class="text-center text-[24px] w-full leading-[28px] tracking-[-0.5px] text-[#091B29]"
         >
-          Monthly subscription
+          {{ $t("price.card2.payment") }}
         </p>
         <NuxtLink
           to="https://t.me/speaklishbot"
@@ -74,9 +74,15 @@
           target="_blank"
           class="rounded-[36px] text-center leading-[24px] py-[16px] px-[24px] bg-[#08DA83] w-full hover:bg-[#18B368] transition-all duration-500"
         >
-          Get started
+          {{ $t("price.start") }}
         </NuxtLink>
       </div>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
+</script>
