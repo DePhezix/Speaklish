@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "Nuxt 3 starter",
+      title: "Speaklish",
       link: [
         {
           rel: "icon",

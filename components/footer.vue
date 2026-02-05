@@ -6,18 +6,33 @@
       <h5 class="sf-display font-extrabold text-[36px] leading-[43px]">
         Take your first IELTS speaking test with Speklish
       </h5>
-      <button class="bg-[#08da83] rounded-[36px] px-[24px] py-[16px] w-fit">
+      <NuxtLink
+        to="https://t.me/speaklishbot"
+        external
+        target="_blank"
+        class="bg-[#08da83] rounded-[36px] px-[24px] py-[16px] w-fit"
+      >
         Let's get started
-      </button>
+      </NuxtLink>
     </div>
     <div class="flex flex-col w-[713px] items-end justify-between">
       <div class="flex gap-[32px] w-fit">
         <NuxtLink to="#home" class="font-medium text-[14px]">Home</NuxtLink>
-        <NuxtLink to="#product" class="font-medium text-[14px]">Product</NuxtLink>
-        <NuxtLink to="#howItWorks" class="font-medium text-[14px]">How it works</NuxtLink>
-        <NuxtLink to="#evaluation" class="font-medium text-[14px]">Evaluation</NuxtLink>
-        <NuxtLink to="#audience" class="font-medium text-[14px]">Audience</NuxtLink>
-        <NuxtLink to="#users" class="font-medium text-[14px]">Our Users</NuxtLink>
+        <NuxtLink to="#product" class="font-medium text-[14px]"
+          >Product</NuxtLink
+        >
+        <NuxtLink to="#howItWorks" class="font-medium text-[14px]"
+          >How it works</NuxtLink
+        >
+        <NuxtLink to="#evaluation" class="font-medium text-[14px]"
+          >Evaluation</NuxtLink
+        >
+        <NuxtLink to="#audience" class="font-medium text-[14px]"
+          >Audience</NuxtLink
+        >
+        <NuxtLink to="#users" class="font-medium text-[14px]"
+          >Our Users</NuxtLink
+        >
         <NuxtLink to="#price" class="font-medium text-[14px]">Price</NuxtLink>
       </div>
       <div class="flex gap-[24px] w-fit">

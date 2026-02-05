@@ -46,9 +46,14 @@
         </ul>
       </button>
     </div>
-    <button class="rounded-[36px] px-[24px] py-[16px] bg-[#08da83] h-min w-min">
+    <NuxtLink
+      to="https://t.me/speaklishbot"
+      external
+      target="_blank"
+      class="rounded-[36px] px-[24px] py-[16px] bg-[#08da83] h-min w-min"
+    >
       Start
-    </button>
+    </NuxtLink>
   </nav>
 </template>
 
