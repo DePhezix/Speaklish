@@ -63,7 +63,7 @@
     </NuxtLink>
   </nav>
   <div
-    class="overflow-auto z-[1000] w-[324px] justify-between py-[36px] px-[24px] top-0 min-h-screen h-full shadow-[15px_0px_37.6px_0px_rgba(0,0,0,0.5)] fixed -translate-x-full flex flex-col transition-transform duration-300 ease-in-out bg-[#010508]"
+    class="overflow-auto z-[1000] w-[324px] justify-between py-[36px] px-[24px] top-0 min-h-screen h-full shadow-[15px_0px_37.6px_0px_rgba(0,0,0,0.5)] fixed -translate-x-[110%] flex flex-col transition-transform duration-300 ease-in-out bg-[#010508]"
     :class="{ '!translate-x-0': mobileMenuOpen }"
   >
     <div class="flex items-center justify-between">
@@ -96,7 +96,10 @@
           :class="route.params.lang === code ? 'bg-[#08da83]' : 'bg-white/10'"
         >
           {{ display }}
-          <TickWhite v-if="route.params.lang === code" class="w-[24px] h-[24px]" />
+          <TickWhite
+            v-if="route.params.lang === code"
+            class="w-[24px] h-[24px]"
+          />
         </button>
       </div>
     </div>
@@ -150,10 +153,3 @@ const handleLanguageChange = async (langCode: languageTypes) => {
   mobileMenuOpen.value = false;
 };
 </script>
-
-<style scoped>
-.tick-white {
-  fill: #fff;
-  stroke: #fff;
-}
-</style>

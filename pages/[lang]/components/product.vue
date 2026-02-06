@@ -1,32 +1,32 @@
 <template>
   <section
-    class="flex items-center justify-center py-[64px] px-[52px]"
+    class="flex items-center justify-center 2xl:py-[64px] 2xl:px-[52px] py-[36px] px-[16px]"
     id="product"
   >
     <div
       class="flex flex-col rounded-[36px] p-[48px] gap-[36px] bg-white items-center"
     >
-      <header class="flex flex-col gap-[8px] items-center w-[612px]">
+      <header class="flex flex-col gap-[8px] items-center md:w-[612px] w-full">
         <p
-          class="h-[48px] rounded-[36px] border px-[24px] py-[16px] w-min flex items-center border-black/20 text-black/70 font-[700]"
+          class="text-[14px] lg:text-[16px] h-[48px] rounded-[36px] border px-[24px] py-[16px] w-min flex items-center border-black/20 text-black/70 font-[700]"
         >
           {{ $t("product.tag") }}
         </p>
         <h1
-          class="text-black sf-display font-extrabold text-[64px] leading-[100%] text-center"
+          class="text-black sf-display font-extrabold text-[36px] md:text-[64px] leading-[100%] text-center"
           v-html="t('product.title')"
         />
         <p
-          class="text-[#6A6A6A] leading-[22px] tracking-[-0.2px] text-center"
+          class="text-[14px] md:text-[16px] text-[#6A6A6A] leading-[20px] md:leading-[22px] tracking-[-0.2px] text-center"
           v-html="t('product.desc')"
         />
       </header>
-      <div class="flex gap-[24px] justify-center">
+      <div class="flex gap-[24px] justify-center flex-wrap">
         <div v-for="card in cards" class="flex flex-col">
-          <img :src="card.imgSrc" class="w-[397px] h-[174px]" />
+          <img :src="card.imgSrc" class="2xl:w-[397px] 2xl:h-[174px] w-[314px] h-[138px]" />
           <p
             v-html="card.description"
-            class="w-[397px] rounded-[24px] h-full p-[32px] bg-[#091B29] text-[20px] leading-[26px] tracking-[-0.5px]"
+            class="2xl:w-[397px] w-[314px] rounded-[24px] h-full 2xl:p-[32px] p-[16px] bg-[#091B29] 2xl:text-[20px] text-[16px] 2xl:leading-[26px] leading-[22px] tracking-[-0.5px] "
           />
         </div>
       </div>
