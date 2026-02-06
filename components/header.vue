@@ -1,13 +1,13 @@
 <template>
   <nav
-    class="flex h-[112px] justify-between py-[16px] px-[100px] font-[500] text-[14px] items-center"
+    class="flex h-fit md:h-[112px] justify-between py-[16px] px-[16px] md:px-[100px] font-[500] text-[14px] items-center"
   >
     <div class="flex max-[2xl]:w-full items-center gap-[24px]">
       <Menu
-        class="2xl:hidden h-[32px] cursor-pointer"
+        class="2xl:hidden h-[24px] md:h-[32px] cursor-pointer"
         @click="mobileMenuOpen = true"
       />
-      <Logo class="w-[199px]" />
+      <Logo class="w-[121px] md:w-[199px]" />
     </div>
 
     <div class="hidden 2xl:flex gap-[32px] items-center leading-[100%]">
@@ -57,13 +57,13 @@
       to="https://t.me/speaklishbot"
       external
       target="_blank"
-      class="rounded-[36px] px-[24px] py-[16px] bg-[#08da83] h-min w-min"
+      class="rounded-[36px] px-[24px] py-[16px] bg-[#08da83] h-[40px] md:h-min w-min flex items-center font-medium"
     >
       {{ $t("nav.start") }}
     </NuxtLink>
   </nav>
   <div
-    class="z-[1000] w-[324px] justify-between py-[36px] px-[24px] top-0 h-screen shadow-[15px_0px_37.6px_0px_rgba(0,0,0,0.5)] fixed -translate-x-full flex flex-col transition-transform duration-300 ease-in-out bg-[#010508]"
+    class="overflow-auto z-[1000] w-[324px] justify-between py-[36px] px-[24px] top-0 min-h-screen h-full shadow-[15px_0px_37.6px_0px_rgba(0,0,0,0.5)] fixed -translate-x-full flex flex-col transition-transform duration-300 ease-in-out bg-[#010508]"
     :class="{ '!translate-x-0': mobileMenuOpen }"
   >
     <div class="flex items-center justify-between">
