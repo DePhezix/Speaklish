@@ -1,5 +1,5 @@
 <template>
-  <div class="flex py-[64px] px-[100px] gap-[24px]" id="audience">
+  <section class="flex py-[64px] px-[100px] gap-[24px]" id="audience">
     <img src="../assets/imgs/audience.avif" />
     <div class="flex flex-col justify-center gap-[8px]">
       <h2
@@ -10,7 +10,7 @@
         {{ $t("audience.desc") }}
       </p>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">

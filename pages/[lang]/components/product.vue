@@ -1,5 +1,5 @@
 <template>
-  <div
+  <section
     class="flex items-center justify-center py-[64px] px-[52px]"
     id="product"
   >
@@ -31,7 +31,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">

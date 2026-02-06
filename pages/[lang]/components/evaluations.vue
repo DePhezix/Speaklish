@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col py-[64px] px-[52px] gap-[48px]" id="evaluation">
+  <section class="flex flex-col py-[64px] px-[52px] gap-[48px]" id="evaluation">
     <div
       class="flex flex-col w-[1335px] rounded-[36px] p-[48px] gap-[24px] bg-white"
     >
@@ -262,7 +262,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">

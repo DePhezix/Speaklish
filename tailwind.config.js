@@ -8,6 +8,9 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
+    screen: {
+      '2xl': '1440px'
+    }
   },
   variants: {
   },

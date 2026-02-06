@@ -1,5 +1,5 @@
 <template>
-  <div
+  <section
     class="flex flex-col pt-[64px] px-[100px] pb-[100px] gap-[36px] items-center bg-clip-padding"
     id="price"
   >
@@ -78,7 +78,7 @@
         </NuxtLink>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">

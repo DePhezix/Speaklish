@@ -1,5 +1,5 @@
 <template>
-  <div
+  <section
     class="flex flex-col py-[64px] px-[100px] gap-[16px] items-center"
     id="howItWorks"
   >
@@ -8,7 +8,7 @@
     <HowItWorksStep :step="steps[1]" />
     <img src="../assets/imgs/arrow2.avif" class="w-[277px] h-[127px]" />
     <HowItWorksStep :step="steps[2]" />
-  </div>
+  </section>
 </template>
 <script setup lang="ts">
 import HowItWorksStep from "./howItWorksStep.vue";
@@ -26,22 +26,19 @@ const steps = computed<howItWorksStepType[]>(() => [
   {
     imgSrc: Step1_2,
     step: "1, 2",
-    description:
-      t("howItWorks.desc1_2"),
+    description: t("howItWorks.desc1_2"),
     title: t("howItWorks.title"),
   },
   {
     imgSrc: Step3_4,
     step: "3, 4",
-    description:
-      t("howItWorks.desc3_4"),
+    description: t("howItWorks.desc3_4"),
     inverted: true,
   },
   {
     imgSrc: Step5_6,
     step: "5, 6",
-    description:
-      t("howItWorks.desc5_6"),
+    description: t("howItWorks.desc5_6"),
   },
 ]);
 </script>
