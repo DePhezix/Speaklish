@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="flex h-fit md:h-[112px] justify-between py-[16px] px-[16px] md:px-[100px] font-[500] text-[14px] items-center"
+    class="flex h-fit md:h-[112px] justify-between py-[16px] px-[16px] 2xl:px-[100px] font-[500] text-[14px] items-center"
   >
     <div class="flex max-[2xl]:w-full items-center gap-[24px]">
       <Menu

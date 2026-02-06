@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="flex rounded-t-[36px] gap-[24px] py-[64px] px-[100px] bg-[#051019]"
+    class="flex justify-center rounded-t-[36px] gap-[24px] py-[64px] px-[100px] bg-[#051019]"
   >
     <div class="flex flex-col w-[504px] gap-[16px]">
       <h5 class="sf-display font-extrabold text-[36px] leading-[43px]">
