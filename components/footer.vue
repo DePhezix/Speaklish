@@ -1,8 +1,8 @@
 <template>
   <footer
-    class="flex justify-center rounded-t-[36px] gap-[24px] py-[64px] px-[100px] bg-[#051019]"
+    class="flex flex-col lg:flex-row justify-center rounded-t-[36px] gap-[24px] py-[64px] 2xl:px-[100px] px-[16px] bg-[#051019]"
   >
-    <div class="flex flex-col w-[504px] gap-[16px]">
+    <div class="flex flex-col w-full lg:w-[504px] gap-[16px]">
       <h5 class="sf-display font-extrabold text-[36px] leading-[43px]">
         {{ $t("footer.title") }}
       </h5>
@@ -15,8 +15,8 @@
         {{ $t("footer.start") }}
       </NuxtLink>
     </div>
-    <div class="flex flex-col w-[713px] items-end justify-between">
-      <div class="flex gap-[32px] w-fit">
+    <div class="flex flex-col w-full lg:w-[713px] items-end justify-between">
+      <div class="hidden 2xl:flex gap-[32px] w-fit ">
         <NuxtLink to="#home" class="font-medium text-[14px]">{{
           $t("nav.home")
         }}</NuxtLink>
@@ -39,9 +39,9 @@
           $t("nav.price")
         }}</NuxtLink>
       </div>
-      <div class="flex gap-[24px] w-fit">
+      <div class="flex gap-[12px] lg:gap-[24px] w-fit">
         <NuxtLink
-          class="rounded-[16px] p-[16px] bg-white/10 cursor-pointer"
+          class="rounded-[16px] p-[12px] lg:p-[16px] bg-white/10 cursor-pointer"
           v-for="social in socials"
           :key="index"
           :to="social.url"
@@ -77,4 +77,5 @@ const socials: Social[] = [
   { url: "https://telegram.org", icon: Telegram },
   { url: "https://twitter.com", icon: Twitter },
 ];
+
 </script>
