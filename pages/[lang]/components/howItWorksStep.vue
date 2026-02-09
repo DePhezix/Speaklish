@@ -1,5 +1,5 @@
 <template>
-  <div class="flex !flex-col-reverse lg:flex-row justify-center items-center" :class="{'!flex-row-reverse': props.step.inverted}">
+  <div class="flex flex-col-reverse lg:flex-row justify-center items-center" :class="{'lg:!flex-row-reverse': props.step.inverted}">
     <img :src="props.step.imgSrc" class="w-[361px] h-[312px] lg:w-[608px] lg:h-[525px]" />
     <div class="w-full lg:w-[608px] flex flex-col gap-[8px] justify-center">
       <h1 v-if="props.step.title" class="text-[36px] sf-display font-extrabold lg:text-[64px] leading-[116.5%] tracking-0" v-html="props.step.title" />
