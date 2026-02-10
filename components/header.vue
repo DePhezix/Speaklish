@@ -29,7 +29,7 @@
           :class="{ 'rotate-180': languageOptionsOpen }"
         />
         <ul
-          class="hidden absolute bg-white top-[110%] left-0 py-[12px] px-[16px] flex-col gap-[10px] w-full rounded-[16px]"
+          class="z-[100] hidden absolute bg-white top-[110%] left-0 py-[12px] px-[16px] flex-col gap-[10px] w-full rounded-[16px]"
           :class="{ '!flex': languageOptionsOpen }"
         >
           <li
@@ -62,6 +62,11 @@
       {{ $t("nav.start") }}
     </NuxtLink>
   </nav>
+  <div
+    class="fixed left-0 top-0 w-screen h-screen hidden"
+    :class="{ '!block': languageOptionsOpen }"
+    @click="languageOptionsOpen = false"
+  />
   <div
     class="overflow-auto z-[1000] w-[324px] justify-between py-[36px] px-[24px] top-0 min-h-screen h-full shadow-[15px_0px_37.6px_0px_rgba(0,0,0,0.5)] fixed -translate-x-[110%] flex flex-col transition-transform duration-300 ease-in-out bg-[#010508]"
     :class="{ '!translate-x-0': mobileMenuOpen }"
@@ -148,8 +153,8 @@ const currentLanguage = computed(() => {
 });
 
 const handleLanguageChange = async (langCode: languageTypes) => {
-  await navigateTo({ params: { lang: langCode } });
-  languageOptionsOpen.value = false;
+  await navigateTo({ params: { lang: langCode } }, { external: true });
+   languageOptionsOpen.value = false;
   mobileMenuOpen.value = false;
 };
 </script>

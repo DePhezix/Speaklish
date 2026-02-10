@@ -16,28 +16,40 @@
       </NuxtLink>
     </div>
     <div class="flex flex-col w-full lg:w-[713px] items-end justify-between">
-      <div class="hidden 2xl:flex gap-[32px] w-fit ">
-        <NuxtLink to="#home" class="font-medium text-[14px]">{{
-          $t("nav.home")
-        }}</NuxtLink>
-        <NuxtLink to="#product" class="font-medium text-[14px]">{{
-          $t("nav.product")
-        }}</NuxtLink>
-        <NuxtLink to="#howItWorks" class="font-medium text-[14px]">{{
-          $t("nav.howItWorks")
-        }}</NuxtLink>
-        <NuxtLink to="#evaluation" class="font-medium text-[14px]">{{
-          $t("nav.evaluation")
-        }}</NuxtLink>
-        <NuxtLink to="#audience" class="font-medium text-[14px]">{{
-          $t("nav.audience")
-        }}</NuxtLink>
-        <NuxtLink to="#users" class="font-medium text-[14px]">{{
-          $t("nav.users")
-        }}</NuxtLink>
-        <NuxtLink to="#price" class="font-medium text-[14px]">{{
-          $t("nav.price")
-        }}</NuxtLink>
+      <div class="hidden 2xl:flex gap-[32px] w-fit flex-nowrap">
+        <NuxtLink to="#home" class="font-medium text-[14px] whitespace-nowrap">
+          {{ $t("nav.home") }}
+        </NuxtLink>
+        <NuxtLink
+          to="#product"
+          class="font-medium text-[14px] whitespace-nowrap"
+        >
+          {{ $t("nav.product") }}
+        </NuxtLink>
+        <NuxtLink
+          to="#howItWorks"
+          class="font-medium text-[14px] whitespace-nowrap"
+        >
+          {{ $t("nav.howItWorks") }}
+        </NuxtLink>
+        <NuxtLink
+          to="#evaluation"
+          class="font-medium text-[14px] whitespace-nowrap"
+        >
+          {{ $t("nav.evaluation") }}
+        </NuxtLink>
+        <NuxtLink
+          to="#audience"
+          class="font-medium text-[14px] whitespace-nowrap"
+        >
+          {{ $t("nav.audience") }}
+        </NuxtLink>
+        <NuxtLink to="#users" class="font-medium text-[14px] whitespace-nowrap">
+          {{ $t("nav.users") }}
+        </NuxtLink>
+        <NuxtLink to="#price" class="font-medium text-[14px] whitespace-nowrap">
+          {{ $t("nav.price") }}
+        </NuxtLink>
       </div>
       <div class="flex gap-[12px] lg:gap-[24px] w-fit flex-wrap">
         <NuxtLink
@@ -70,12 +82,14 @@ import type { Social } from "~/types/frontend";
 const { t } = useI18n();
 
 const socials: Social[] = [
-  { url: "https://www.linkedin.com/company/speaklish/?originalSubdomain=uz", icon: LinkedIn },
+  {
+    url: "https://www.linkedin.com/company/speaklish/?originalSubdomain=uz",
+    icon: LinkedIn,
+  },
   { url: "https://www.facebook.com/Speaklish/", icon: Facebook },
   { url: "https://www.instagram.com/speaklish.uz/?hl=en", icon: Instagram },
   { url: "https://www.youtube.com/c/Speaklish", icon: Youtube },
   { url: "https://t.me/speaklishbot", icon: Telegram },
   { url: "https://twitter.com", icon: Twitter },
 ];
-
 </script>

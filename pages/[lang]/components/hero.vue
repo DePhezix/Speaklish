@@ -1,5 +1,5 @@
 <template>
-  <main
+  <section
     class="container mx-auto flex flex-col md:flex-row gap-[24px] 2xl:px-[100px] px-[16px] pt-[24px] justify-between items-center"
     id="home"
   >
@@ -28,7 +28,7 @@
       src="../assets/imgs/phone.avif"
       class="2xl:w-[608px] 2xl:h-[642px] w-[361px] h-[380px]"
     />
-  </main>
+  </section>
 </template>
 
 <script setup lang="ts">
