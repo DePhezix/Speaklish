@@ -1,5 +1,5 @@
 <template>
-  <section class="flex py-[36px] px-[16px] 2xl:py-[64px] 2xl:px-[100px] gap-[24px] lg:flex-row flex-col-reverse justify-center items-center" id="audience">
+  <section class="container mx-auto flex py-[36px] px-[16px] 2xl:py-[64px] 2xl:px-[100px] gap-[24px] lg:flex-row flex-col-reverse justify-center items-center" id="audience">
     <img src="../assets/imgs/audience.avif" />
     <div class="flex flex-col justify-center gap-[8px]">
       <h2

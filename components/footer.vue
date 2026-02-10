@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="flex flex-col lg:flex-row justify-center rounded-t-[36px] gap-[24px] py-[64px] 2xl:px-[100px] px-[16px] bg-[#051019]"
+    class="flex flex-col lg:flex-row justify-between rounded-t-[36px] gap-[24px] py-[64px] 2xl:px-[100px] px-[16px] bg-[#051019]"
   >
     <div class="flex flex-col w-full lg:w-[504px] gap-[16px]">
       <h5 class="sf-display font-extrabold text-[36px] leading-[43px]">
@@ -70,11 +70,11 @@ import type { Social } from "~/types/frontend";
 const { t } = useI18n();
 
 const socials: Social[] = [
-  { url: "https://linkedin.com", icon: LinkedIn },
-  { url: "https://facebook.com", icon: Facebook },
-  { url: "https://instagram.com", icon: Instagram },
-  { url: "https://youtube.com", icon: Youtube },
-  { url: "https://telegram.org", icon: Telegram },
+  { url: "https://www.linkedin.com/company/speaklish/?originalSubdomain=uz", icon: LinkedIn },
+  { url: "https://www.facebook.com/Speaklish/", icon: Facebook },
+  { url: "https://www.instagram.com/speaklish.uz/?hl=en", icon: Instagram },
+  { url: "https://www.youtube.com/c/Speaklish", icon: Youtube },
+  { url: "https://t.me/speaklishbot", icon: Telegram },
   { url: "https://twitter.com", icon: Twitter },
 ];
 

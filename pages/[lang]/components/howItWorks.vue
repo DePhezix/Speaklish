@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col py-[36px] px-[16px] 2xl:py-[64px] 2xl:px-[100px] gap-[16px] items-center"
+    class="container mx-auto flex flex-col py-[36px] px-[16px] 2xl:py-[64px] 2xl:px-[100px] gap-[16px] items-center"
     id="howItWorks"
   >
     <HowItWorksStep :step="steps[0]" />

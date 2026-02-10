@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex items-center justify-center 2xl:py-[64px] 2xl:px-[52px] py-[36px] px-[16px]"
+    class="container mx-auto flex items-center justify-center 2xl:py-[64px] 2xl:px-[52px] py-[36px] px-[16px]"
     id="product"
   >
     <div

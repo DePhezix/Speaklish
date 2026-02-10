@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col py-[36px] px-[16px] 2xl:pt-[64px] 2xl:px-[100px] 2xl:pb-[100px] gap-[36px] items-center bg-clip-padding"
+    class="container mx-auto flex flex-col py-[36px] px-[16px] 2xl:pt-[64px] 2xl:px-[100px] 2xl:pb-[100px] gap-[36px] items-center bg-clip-padding"
     id="price"
   >
     <h1 class="font-extrabold sf-display text-[36px] lg:text-[64px] leading-[100%]">
