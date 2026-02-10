@@ -14,7 +14,7 @@
         >
           <div class="bg-[#091b29] rounded-[24px]">
             <div
-              class="bg-[#F8F8F81A]/10 rounded-[24px] flex flex-col py-[24px] px-[36px] gap-[16px] backdrop-blur-[101.1px] xl:w-[609px]"
+              class="bg-[#F8F8F81A]/10 rounded-[24px] flex flex-col py-[24px] px-[36px] gap-[16px] backdrop-blur-[101.1px] w-full xl:min-w-[609px]"
             >
               <h3
                 class="font-extrabold text-[24px] leading-[28px] trackig-[-0.5px]"
