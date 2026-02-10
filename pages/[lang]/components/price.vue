@@ -10,7 +10,7 @@
     </h1>
     <div class="w-full flex gap-[24px] lg:gap-[64px] justify-center flex-wrap">
       <div
-        class="flex-1 hover:ring-[#08DA83] transition-all duration-300 flex flex-col min-w-[361px] xl:w-[503px] rounded-[36px] ring-[8px] lg:ring-[16px] ring-white/20 bg-white p-[24px] lg:p-[48px] gap-[12px] 2xl:gap-[24px] items-center"
+        class="flex-1 hover:ring-[#08DA83] transition-all duration-300 flex flex-col sm:min-w-[361px] xl:w-[503px] rounded-[36px] ring-[8px] lg:ring-[16px] ring-white/20 bg-white p-[24px] lg:p-[48px] gap-[12px] 2xl:gap-[24px] items-center"
       >
         <button
           disabled
@@ -45,7 +45,7 @@
         </NuxtLink>
       </div>
       <div
-        class="flex-1 hover:ring-[#08DA83] transition-all duration-300 flex flex-col min-w-[361px] xl:w-[503px] rounded-[36px] ring-[8px] lg:ring-[16px] ring-white/20 bg-white p-[24px] lg:p-[48px] gap-[12px] 2xl:gap-[24px] items-center"
+        class="flex-1 hover:ring-[#08DA83] transition-all duration-300 flex flex-col sm:min-w-[361px] xl:w-[503px] rounded-[36px] ring-[8px] lg:ring-[16px] ring-white/20 bg-white p-[24px] lg:p-[48px] gap-[12px] 2xl:gap-[24px] items-center"
       >
         <button
           disabled
