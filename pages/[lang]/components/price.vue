@@ -3,12 +3,14 @@
     class="container mx-auto flex flex-col py-[36px] px-[16px] 2xl:pt-[64px] 2xl:px-[100px] 2xl:pb-[100px] gap-[36px] items-center bg-clip-padding"
     id="price"
   >
-    <h1 class="font-extrabold sf-display text-[36px] lg:text-[64px] leading-[100%]">
+    <h1
+      class="font-extrabold sf-display text-[36px] lg:text-[64px] leading-[100%]"
+    >
       {{ $t("price.title") }}
     </h1>
     <div class="w-full flex gap-[24px] lg:gap-[64px] justify-center flex-wrap">
       <div
-        class="flex-1 hover:ring-[#08DA83] transition-all duration-300 flex flex-col min-w-[361px] xl:w-[503px] rounded-[36px] ring-[8px] lg:ring-[16px] ring-white/20 bg-white p-[24px] lg:p-[48px] gap-[24px] items-center"
+        class="flex-1 hover:ring-[#08DA83] transition-all duration-300 flex flex-col min-w-[361px] xl:w-[503px] rounded-[36px] ring-[8px] lg:ring-[16px] ring-white/20 bg-white p-[24px] lg:p-[48px] gap-[12px] 2xl:gap-[24px] items-center"
       >
         <button
           disabled
@@ -43,7 +45,7 @@
         </NuxtLink>
       </div>
       <div
-        class="flex-1 hover:ring-[#08DA83] transition-all duration-300 flex flex-col min-w-[361px] xl:w-[503px] rounded-[36px] ring-[8px] lg:ring-[16px] ring-white/20 bg-white p-[24px] lg:p-[48px] gap-[24px] items-center"
+        class="flex-1 hover:ring-[#08DA83] transition-all duration-300 flex flex-col min-w-[361px] xl:w-[503px] rounded-[36px] ring-[8px] lg:ring-[16px] ring-white/20 bg-white p-[24px] lg:p-[48px] gap-[12px] 2xl:gap-[24px] items-center"
       >
         <button
           disabled

@@ -4,7 +4,7 @@
     id="product"
   >
     <div
-      class="flex flex-col rounded-[36px] p-[48px] gap-[36px] bg-white items-center"
+      class="flex flex-col rounded-[36px] p-[24px] 2xl:p-[48px] 2xl:gap-[36px] gap-[24px] bg-white items-center"
     >
       <header class="flex flex-col gap-[8px] items-center md:w-[612px] w-full">
         <p
@@ -21,7 +21,7 @@
           v-html="t('product.desc')"
         />
       </header>
-      <div class="flex gap-[24px] justify-center flex-wrap">
+      <div class="flex gap-[16px] 2xl:gap-[24px] justify-center flex-wrap">
         <div v-for="card in cards" class="flex flex-col">
           <img :src="card.imgSrc" class="2xl:w-[397px] 2xl:h-[174px] w-[314px] h-[138px]" />
           <p

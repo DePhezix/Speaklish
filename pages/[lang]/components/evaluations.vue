@@ -12,7 +12,7 @@
         {{ $t("evaluations.title") }}
       </h1>
       <div class="flex flex-col xl:flex-row gap-[24px]">
-        <div class="flex flex-wrap xl:flex-col gap-[16px]">
+        <div class="flex flex-wrap xl:flex-col gap-[8px] 2xl:gap-[16px]">
           <div
             class="flex-1 flex md:min-w-[397px] h-min rounded-[24px] py-[20px] px-[36px] gap-[16px] bg-[#F8F8F8]"
           >
@@ -56,7 +56,7 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-col gap-[16px]">
+        <div class="flex flex-col gap-[8px] 2xl:gap-[16px]">
           <div
             class="w-full flex flex-col rounded-[24px] p-[18px] md:p-[36px] gap-[6px] bg-[#F8F8F8] w-[819px]"
           >
@@ -113,7 +113,7 @@
         {{ $t("evaluations.title") }}
       </h1>
       <div class="flex flex-col xl:flex-row gap-[24px]">
-        <div class="flex flex-wrap xl:flex-col gap-[16px]">
+        <div class="flex flex-wrap xl:flex-col gap-[8px] 2xl:gap-[16px]">
           <div
             class="flex-1 flex md:min-w-[397px] h-min rounded-[24px] py-[20px] px-[36px] gap-[16px] bg-[#F8F8F8]"
           >
@@ -157,7 +157,7 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-col gap-[16px]">
+        <div class="flex flex-col gap-[8px] 2xl:gap-[16px]">
           <div
             class="w-full flex flex-col rounded-[24px] p-[18px] md:p-[24px] gap-[6px] bg-[#F8F8F8]"
           >

@@ -39,7 +39,7 @@
           $t("nav.price")
         }}</NuxtLink>
       </div>
-      <div class="flex gap-[12px] lg:gap-[24px] w-fit">
+      <div class="flex gap-[12px] lg:gap-[24px] w-fit flex-wrap">
         <NuxtLink
           class="rounded-[16px] p-[12px] lg:p-[16px] bg-white/10 cursor-pointer"
           v-for="social in socials"

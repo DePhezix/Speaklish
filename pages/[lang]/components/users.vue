@@ -8,7 +8,7 @@
         class="font-extrabold sf-display text-[36px] lg:text-[64px] leading-[100%]"
         v-html="t('users.title')"
       />
-      <div class="flex gap-[24px] flex-col">
+      <div class="flex gap-[16px] 2xl:gap-[24px] flex-col">
         <div
           class="relative p-[1px] bg-gradient-to-b from-white to-transparent rounded-[24px]"
         >
@@ -48,7 +48,7 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col sm:flex-row gap-[24px]">
+        <div class="flex flex-col sm:flex-row gap-[16px] 2xl:gap-[24px]">
           <div
             class="xl:w-[292px] relative p-[1px] bg-gradient-to-b from-white to-transparent rounded-[24px] flex-1"
           >
