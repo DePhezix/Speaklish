@@ -14,7 +14,7 @@
       <div class="flex flex-col xl:flex-row gap-[24px]">
         <div class="flex flex-wrap xl:flex-col gap-[8px] 2xl:gap-[16px]">
           <div
-            class="flex-1 flex md:min-w-[397px] h-min rounded-[24px] py-[20px] px-[36px] gap-[16px] bg-[#F8F8F8]"
+            class="min-w-[250px] flex-1 flex md:min-w-[397px] h-min rounded-[24px] py-[20px] px-[36px] gap-[16px] bg-[#F8F8F8]"
           >
             <img
               src="../assets/imgs/evaluation1.avif"
@@ -115,7 +115,7 @@
       <div class="flex flex-col xl:flex-row gap-[24px]">
         <div class="flex flex-wrap xl:flex-col gap-[8px] 2xl:gap-[16px]">
           <div
-            class="flex-1 flex md:min-w-[397px] h-min rounded-[24px] py-[20px] px-[36px] gap-[16px] bg-[#F8F8F8]"
+            class="min-w-[250px] flex-1 flex md:min-w-[397px] h-min rounded-[24px] py-[20px] px-[36px] gap-[16px] bg-[#F8F8F8]"
           >
             <img
               src="../assets/imgs/evaluation2.avif"
