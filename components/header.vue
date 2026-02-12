@@ -1,6 +1,7 @@
 <template>
   <nav
-    class="flex h-fit md:h-[112px] justify-between py-[16px] px-[16px] 2xl:px-[100px] font-[500] text-[14px] items-center"
+    ref="header"
+    class="opacity-0 flex h-fit md:h-[112px] justify-between py-[16px] px-[16px] 2xl:px-[100px] font-[500] text-[14px] items-center"
   >
     <div class="flex max-[2xl]:w-full items-center gap-[24px]">
       <Menu
@@ -131,6 +132,8 @@ const { activeSection } = useActiveSection();
 
 const mobileMenuOpen = ref<boolean>(false);
 const languageOptionsOpen = ref<boolean>(false);
+const header = ref(null);
+
 const navSections = [
   "home",
   "product",
@@ -154,7 +157,16 @@ const currentLanguage = computed(() => {
 
 const handleLanguageChange = async (langCode: languageTypes) => {
   await navigateTo({ params: { lang: langCode } }, { external: true });
-   languageOptionsOpen.value = false;
+  languageOptionsOpen.value = false;
   mobileMenuOpen.value = false;
 };
+
+const { gsap } = useGsap();
+onMounted(() => {
+  gsap.fromTo(
+    header.value,
+    { opacity: 0, y: -20 },
+    { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" },
+  );
+});
 </script>

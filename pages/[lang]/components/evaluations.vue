@@ -3,18 +3,20 @@
     class="container mx-auto flex flex-col py-[36px] 2xl:py-[64px] px-[16px] 2xl:px-[52px] gap-[48px] items-center"
     id="evaluation"
   >
+    <!-- Card 1 -->
     <div
+      ref="card1Ref"
       class="flex flex-col w-full 2xl:w-[1335px] rounded-[36px] px-[16px] py-[24px] md:p-[48px] gap-[24px] bg-white"
     >
       <h1
-        class="sf-display font-extrabold text-[24px] sm:text-[36px] lg:text-[64px] text-[#091B29] leading-[119%]"
+        class="opacity-0 card-title sf-display font-extrabold text-[24px] sm:text-[36px] lg:text-[64px] text-[#091B29] leading-[119%]"
       >
         {{ $t("evaluations.title") }}
       </h1>
       <div class="flex flex-col xl:flex-row gap-[24px]">
         <div class="flex flex-wrap xl:flex-col gap-[8px] 2xl:gap-[16px]">
           <div
-            class="min-w-[250px] flex-1 flex md:min-w-[397px] h-min rounded-[24px] py-[20px] px-[36px] gap-[16px] bg-[#F8F8F8]"
+            class="opacity-0 candidate-profile min-w-[250px] flex-1 flex md:min-w-[397px] h-min rounded-[24px] py-[20px] px-[36px] gap-[16px] bg-[#F8F8F8]"
           >
             <img
               src="../assets/imgs/evaluation1.avif"
@@ -35,7 +37,7 @@
           </div>
           <div
             v-for="[type, score] in Object.entries(candidate1Scores)"
-            class="flex-1 md:h-[102px] flex md:min-w-[397px] xl:h-[75px] rounded-[24px] py-[12px] px-[36px] gap-[16px] bg-[#F8F8F8] items-center"
+            class="opacity-0 score-row flex-1 md:h-[102px] flex md:min-w-[397px] xl:h-[75px] rounded-[24px] py-[12px] px-[36px] gap-[16px] bg-[#F8F8F8] items-center"
             :class="{ '!bg-[#08DA83]': type == 'band' }"
           >
             <h2
@@ -58,7 +60,7 @@
         </div>
         <div class="flex flex-col gap-[8px] 2xl:gap-[16px]">
           <div
-            class="w-full flex flex-col rounded-[24px] p-[18px] md:p-[36px] gap-[6px] bg-[#F8F8F8] w-[819px]"
+            class="opacity-0 detail-card w-full flex flex-col rounded-[24px] p-[18px] md:p-[36px] gap-[6px] bg-[#F8F8F8] w-[819px]"
           >
             <h3
               class="font-bold text-[14px] md:text-[20px] leading-[18px] md:leading-[28px] tracking-[-0.5px] text-[#091B29]"
@@ -73,7 +75,7 @@
           </div>
           <div class="flex flex-col md:flex-row gap-[16px] h-full">
             <div
-              class="flex flex-1 flex-col rounded-[24px] p-[18px] md:p-[36px] gap-[6px] bg-[#F8F8F8]"
+              class="opacity-0 detail-card flex flex-1 flex-col rounded-[24px] p-[18px] md:p-[36px] gap-[6px] bg-[#F8F8F8]"
             >
               <h3
                 class="font-bold text-[14px] md:text-[20px] leading-[18px] md:leading-[28px] tracking-[-0.5px] text-[#091B29]"
@@ -87,7 +89,7 @@
               </p>
             </div>
             <div
-              class="flex flex-1 flex-col rounded-[24px] p-[18px] md:p-[36px] gap-[6px] bg-[#F8F8F8]"
+              class="opacity-0 detail-card flex flex-1 flex-col rounded-[24px] p-[18px] md:p-[36px] gap-[6px] bg-[#F8F8F8]"
             >
               <h3
                 class="font-bold text-[14px] md:text-[20px] leading-[18px] md:leading-[28px] tracking-[-0.5px] text-[#091B29]"
@@ -104,18 +106,21 @@
         </div>
       </div>
     </div>
+
+    <!-- Card 2 -->
     <div
+      ref="card2Ref"
       class="flex flex-col w-full 2xl:w-[1335px] rounded-[36px] px-[16px] py-[24px] md:p-[48px] gap-[24px] bg-white"
     >
       <h1
-        class="sf-display font-extrabold text-[24px] sm:text-[36px] lg:text-[64px] text-[#091B29] leading-[119%]"
+        class="opacity-0 card-title sf-display font-extrabold text-[24px] sm:text-[36px] lg:text-[64px] text-[#091B29] leading-[119%]"
       >
         {{ $t("evaluations.title") }}
       </h1>
       <div class="flex flex-col xl:flex-row gap-[24px]">
         <div class="flex flex-wrap xl:flex-col gap-[8px] 2xl:gap-[16px]">
           <div
-            class="min-w-[250px] flex-1 flex md:min-w-[397px] h-min rounded-[24px] py-[20px] px-[36px] gap-[16px] bg-[#F8F8F8]"
+            class="opacity-0 candidate-profile min-w-[250px] flex-1 flex md:min-w-[397px] h-min rounded-[24px] py-[20px] px-[36px] gap-[16px] bg-[#F8F8F8]"
           >
             <img
               src="../assets/imgs/evaluation2.avif"
@@ -136,7 +141,7 @@
           </div>
           <div
             v-for="[type, score] in Object.entries(candidate2Scores)"
-            class="flex-1 md:h-[102px] flex md:min-w-[397px] xl:h-[75px] rounded-[24px] py-[12px] px-[36px] gap-[16px] bg-[#F8F8F8] items-center"
+            class="opacity-0 score-row flex-1 md:h-[102px] flex md:min-w-[397px] xl:h-[75px] rounded-[24px] py-[12px] px-[36px] gap-[16px] bg-[#F8F8F8] items-center"
             :class="{ '!bg-[#08DA83]': type == 'band' }"
           >
             <h2
@@ -159,7 +164,7 @@
         </div>
         <div class="flex flex-col gap-[8px] 2xl:gap-[16px]">
           <div
-            class="w-full flex flex-col rounded-[24px] p-[18px] md:p-[24px] gap-[6px] bg-[#F8F8F8]"
+            class="opacity-0 detail-card w-full flex flex-col rounded-[24px] p-[18px] md:p-[24px] gap-[6px] bg-[#F8F8F8]"
           >
             <h3
               class="font-bold text-[14px] md:text-[20px] leading-[18px] md:leading-[28px] tracking-[-0.5px] text-[#091B29]"
@@ -174,90 +179,66 @@
           </div>
           <div class="flex flex-col md:flex-row gap-[16px] h-full">
             <div
-              class="flex flex-1 flex-col rounded-[24px] p-[18px] md:p-[24px] gap-[6px] bg-[#F8F8F8]"
+              class="opacity-0 detail-card flex flex-1 flex-col rounded-[24px] p-[18px] md:p-[24px] gap-[6px] bg-[#F8F8F8]"
             >
-              <h3
-                class="font-bold text-[14px] md:text-[20px] leading-[18px] md:leading-[28px] tracking-[-0.5px] text-[#091B29]"
-              >
+              <h3 class="font-bold text-[14px] md:text-[20px] text-[#091B29]">
                 {{ $t("evaluations.candidate2.fluency") }}
               </h3>
-              <p
-                class="text-[12px] md:text-[14px] leading-[18px] md:leading-[20px] tracking-[-0.2px] text-[#5A5A5A]"
-              >
+              <p class="text-[12px] md:text-[14px] text-[#5A5A5A]">
                 {{ $t("evaluations.candidate2.fluencyDesc") }}
               </p>
             </div>
             <div
-              class="flex flex-1 flex-col rounded-[24px] p-[18px] md:p-[24px] gap-[6px] bg-[#F8F8F8]"
+              class="opacity-0 detail-card flex flex-1 flex-col rounded-[24px] p-[18px] md:p-[24px] gap-[6px] bg-[#F8F8F8]"
             >
-              <h3
-                class="font-bold text-[14px] md:text-[20px] leading-[18px] md:leading-[28px] tracking-[-0.5px] text-[#091B29]"
-              >
+              <h3 class="font-bold text-[14px] md:text-[20px] text-[#091B29]">
                 {{ $t("evaluations.candidate2.vocabulary") }}
               </h3>
-              <p
-                class="text-[12px] md:text-[14px] leading-[18px] md:leading-[20px] tracking-[-0.2px] text-[#5A5A5A]"
-              >
+              <p class="text-[12px] md:text-[14px] text-[#5A5A5A]">
                 {{ $t("evaluations.candidate2.vocabularyDesc") }}
               </p>
             </div>
           </div>
           <div class="flex flex-col md:flex-row gap-[16px] h-full">
             <div
-              class="flex flex-1 flex-col rounded-[24px] p-[18px] md:p-[24px] gap-[6px] bg-[#F8F8F8]"
+              class="opacity-0 detail-card flex flex-1 flex-col rounded-[24px] p-[18px] md:p-[24px] gap-[6px] bg-[#F8F8F8]"
             >
-              <h3
-                class="font-bold text-[14px] md:text-[20px] leading-[18px] md:leading-[28px] tracking-[-0.5px] text-[#091B29]"
-              >
+              <h3 class="font-bold text-[14px] text-[#091B29] md:text-[20px]">
                 {{ $t("evaluations.candidate2.grammar") }}
               </h3>
-              <p
-                class="text-[12px] md:text-[14px] leading-[18px] md:leading-[20px] tracking-[-0.2px] text-[#5A5A5A]"
-              >
+              <p class="text-[12px] md:text-[14px] text-[#5A5A5A]">
                 {{ $t("evaluations.candidate2.grammarDesc") }}
               </p>
             </div>
             <div
-              class="flex flex-1 flex-col rounded-[24px] p-[18px] md:p-[24px] gap-[6px] bg-[#F8F8F8]"
+              class="opacity-0 detail-card flex flex-1 flex-col rounded-[24px] p-[18px] md:p-[24px] gap-[6px] bg-[#F8F8F8]"
             >
-              <h3
-                class="font-bold text-[14px] md:text-[20px] leading-[18px] md:leading-[28px] tracking-[-0.5px] text-[#091B29]"
-              >
+              <h3 class="font-bold text-[14px] text-[#091B29] md:text-[20px]">
                 {{ $t("evaluations.candidate2.pronunciation") }}
               </h3>
-              <p
-                class="text-[12px] md:text-[14px] leading-[18px] md:leading-[20px] tracking-[-0.2px] text-[#5A5A5A]"
-              >
+              <p class="text-[12px] md:text-[14px] text-[#5A5A5A]">
                 {{ $t("evaluations.candidate2.pronunciationDesc") }}
               </p>
             </div>
           </div>
           <div class="flex flex-col md:flex-row gap-[16px] h-full">
             <div
-              class="flex flex-1 flex-col rounded-[24px] p-[18px] md:p-[24px] gap-[6px] bg-[#F8F8F8]"
+              class="opacity-0 detail-card flex flex-1 flex-col rounded-[24px] p-[18px] md:p-[24px] gap-[6px] bg-[#F8F8F8]"
             >
-              <h3
-                class="font-bold text-[14px] md:text-[20px] leading-[18px] md:leading-[28px] tracking-[-0.5px] text-[#091B29]"
-              >
+              <h3 class="font-bold text-[14px] text-[#091B29] md:text-[20px]">
                 {{ $t("evaluations.candidate2.topicWords") }}
               </h3>
-              <p
-                class="text-[12px] md:text-[14px] leading-[18px] md:leading-[20px] tracking-[-0.2px] text-[#5A5A5A]"
-              >
+              <p class="text-[12px] md:text-[14px] text-[#5A5A5A]">
                 {{ $t("evaluations.candidate2.topicWordsDesc") }}
               </p>
             </div>
             <div
-              class="flex flex-1 flex-col rounded-[24px] p-[18px] md:p-[24px] gap-[6px] bg-[#F8F8F8]"
+              class="opacity-0 detail-card flex flex-1 flex-col rounded-[24px] p-[18px] md:p-[24px] gap-[6px] bg-[#F8F8F8]"
             >
-              <h3
-                class="font-bold text-[14px] md:text-[20px] leading-[18px] md:leading-[28px] tracking-[-0.5px] text-[#091B29]"
-              >
+              <h3 class="font-bold text-[14px] text-[#091B29] md:text-[20px]">
                 {{ $t("evaluations.candidate2.suggestedWords") }}
               </h3>
-              <p
-                class="text-[12px] md:text-[14px] leading-[18px] md:leading-[20px] tracking-[-0.2px] text-[#5A5A5A]"
-              >
+              <p class="text-[12px] md:text-[14px] text-[#5A5A5A]">
                 {{ $t("evaluations.candidate2.suggestedWordsDesc") }}
               </p>
             </div>
@@ -270,10 +251,13 @@
 
 <script setup lang="ts">
 import type { scoreType } from "~/types/frontend";
-
 import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
+const { gsap, ScrollTrigger } = useGsap();
+
+const card1Ref = ref(null);
+const card2Ref = ref(null);
 
 const candidate1Scores: scoreType = {
   fluency: 8.0,
@@ -289,4 +273,42 @@ const candidate2Scores: scoreType = {
   pronounciation: 6.0,
   band: 5.5,
 };
+
+function animateCard(cardEl: HTMLElement) {
+  const tl = gsap.timeline({
+    defaults: { ease: "power3.out" },
+    scrollTrigger: { trigger: cardEl, start: "top 80%" },
+  });
+
+  tl.fromTo(
+    cardEl.querySelector(".card-title"),
+    { opacity: 0, y: 30 },
+    { opacity: 1, y: 0, duration: 0.6 },
+  )
+    .fromTo(
+      cardEl.querySelector(".candidate-profile"),
+      { opacity: 0, x: -30 },
+      { opacity: 1, x: 0, duration: 0.5 },
+      "<0.2",
+    )
+    .fromTo(
+      cardEl.querySelectorAll(".score-row"),
+      { opacity: 0, x: -20 },
+      { opacity: 1, x: 0, duration: 0.4, stagger: 0.08 },
+      "<0.15",
+    )
+    .fromTo(
+      cardEl.querySelectorAll(".detail-card"),
+      { opacity: 0, y: 24 },
+      { opacity: 1, y: 0, duration: 0.45, stagger: 0.1 },
+      "<0.2",
+    );
+}
+
+onMounted(() => {
+  animateCard(card1Ref.value!);
+  animateCard(card2Ref.value!);
+});
+
+onUnmounted(() => ScrollTrigger.getAll().forEach((t) => t.kill()));
 </script>

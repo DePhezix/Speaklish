@@ -1,5 +1,5 @@
 <template>
-  <Hero />
+  <Hero  />
   <Product />
   <HowItWorks />
   <Evaluations />
@@ -16,4 +16,5 @@ import Product from "./components/product.vue";
 import Audience from "./components/audience.vue";
 import Users from "./components/users.vue";
 import Price from "./components/price.vue";
+
 </script>

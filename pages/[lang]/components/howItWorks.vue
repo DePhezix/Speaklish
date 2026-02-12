@@ -4,23 +4,34 @@
     id="howItWorks"
   >
     <HowItWorksStep :step="steps[0]" />
-    <img src="../assets/imgs/arrow1.avif" class="w-[129px] h-[63px] lg:w-[277px] lg:h-[127px]" />
+    <img
+      ref="arrow1Ref"
+      src="../assets/svgs/arrow1.svg"
+      class="opacity-0 w-[129px] h-[63px] lg:w-[277px] lg:h-[127px]"
+    />
     <HowItWorksStep :step="steps[1]" />
-    <img src="../assets/imgs/arrow2.avif" class="ww-[129px] h-[63px] lg:w-[277px] lg:h-[127px]" />
+    <img
+      ref="arrow2Ref"
+      src="../assets/svgs/arrow2.svg"
+      class="opacity-0 w-[129px] h-[63px] lg:w-[277px] lg:h-[127px]"
+    />
     <HowItWorksStep :step="steps[2]" />
   </section>
 </template>
+
 <script setup lang="ts">
 import HowItWorksStep from "./howItWorksStep.vue";
 import Step1_2 from "../assets/imgs/step1_2.avif";
 import Step3_4 from "../assets/imgs/step3_4.avif";
 import Step5_6 from "../assets/imgs/step5_6.avif";
-
 import { useI18n } from "vue-i18n";
-
 import type { howItWorksStepType } from "~/types/frontend";
 
 const { t } = useI18n();
+const { gsap, ScrollTrigger } = useGsap();
+
+const arrow1Ref = ref(null);
+const arrow2Ref = ref(null);
 
 const steps = computed<howItWorksStepType[]>(() => [
   {
@@ -35,10 +46,26 @@ const steps = computed<howItWorksStepType[]>(() => [
     description: t("howItWorks.desc3_4"),
     inverted: true,
   },
-  {
-    imgSrc: Step5_6,
-    step: "5, 6",
-    description: t("howItWorks.desc5_6"),
-  },
+  { imgSrc: Step5_6, step: "5, 6", description: t("howItWorks.desc5_6") },
 ]);
+
+onMounted(() => {
+  [arrow1Ref.value, arrow2Ref.value].forEach((arrow) => {
+    gsap.fromTo(
+      arrow,
+      { opacity: 0, scale: 0.5 },
+      {
+        opacity: 1,
+        scale: 1,
+        duration: 0.4,
+        ease: "back.out(1.7)",
+        scrollTrigger: { trigger: arrow, start: "top 85%" },
+      },
+    );
+  });
+});
+
+onUnmounted(() => {
+  ScrollTrigger.getAll().forEach((t) => t.kill());
+});
 </script>

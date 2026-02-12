@@ -1,16 +1,19 @@
 <template>
   <section
+    ref="sectionRef"
     class="container mx-auto justify-center items-center flex 2xl:px-[64px] 2xl:py-[100px] py-[36px] px-[16px] gap-[24px] justify-center lg:flex-row flex-col"
     id="users"
   >
     <div class="max-xl:w-full flex flex-col gap-[24px]">
       <h1
-        class="font-extrabold sf-display text-[36px] lg:text-[64px] leading-[100%]"
+        ref="titleRef"
+        class="opacity-0 font-extrabold sf-display text-[36px] lg:text-[64px] leading-[100%]"
         v-html="t('users.title')"
       />
       <div class="flex gap-[16px] 2xl:gap-[24px] flex-col">
         <div
-          class="relative p-[1px] bg-gradient-to-b from-white to-transparent rounded-[24px]"
+          ref="statsCardRef"
+          class="opacity-0 relative p-[1px] bg-gradient-to-b from-white to-transparent rounded-[24px]"
         >
           <div class="bg-[#091b29] rounded-[24px]">
             <div
@@ -24,7 +27,8 @@
               <div class="flex gap-[42px]">
                 <div class="flex flex-col flex-1">
                   <h1
-                    class="sf-display font-extrabold text-[36px] lg:text-[64px] leading-[43px] lg:leading-[76px] tracking-[0%] text-[#08DA83]"
+                    ref="stat1Ref"
+                    class="opacity-0 sf-display font-extrabold text-[36px] lg:text-[64px] leading-[43px] lg:leading-[76px] tracking-[0%] text-[#08DA83]"
                   >
                     17k+
                   </h1>
@@ -35,7 +39,8 @@
                 </div>
                 <div class="flex flex-col flex-1">
                   <h1
-                    class="sf-display font-extrabold text-[36px] lg:text-[64px] leading-[43px] lg:leading-[76px] tracking-[0%] text-[#08DA83]"
+                    ref="stat2Ref"
+                    class="opacity-0 sf-display font-extrabold text-[36px] lg:text-[64px] leading-[43px] lg:leading-[76px] tracking-[0%] text-[#08DA83]"
                   >
                     15k+
                   </h1>
@@ -48,9 +53,11 @@
             </div>
           </div>
         </div>
+
         <div class="flex flex-col sm:flex-row gap-[16px] 2xl:gap-[24px]">
           <div
-            class="xl:w-[292px] relative p-[1px] bg-gradient-to-b from-white to-transparent rounded-[24px] flex-1"
+            ref="card1Ref"
+            class="opacity-0 xl:w-[292px] relative p-[1px] bg-gradient-to-b from-white to-transparent rounded-[24px] flex-1"
           >
             <div class="bg-[#091b29] h-full rounded-[24px]">
               <div
@@ -69,7 +76,8 @@
             </div>
           </div>
           <div
-            class="relative p-[1px] bg-gradient-to-b from-white to-transparent rounded-[24px] flex-1"
+            ref="card2Ref"
+            class="opacity-0 relative p-[1px] bg-gradient-to-b from-white to-transparent rounded-[24px] flex-1"
           >
             <div class="h-full bg-[#091b29] rounded-[24px]">
               <div
@@ -91,9 +99,11 @@
         </div>
       </div>
     </div>
+
     <img
+      ref="imgRef"
       src="../assets/imgs/users.avif"
-      class="w-[343px] sm:w-[500px] xl:w-[607px] xl:h-[447px]"
+      class="opacity-0 w-[343px] sm:w-[500px] xl:w-[607px] xl:h-[447px]"
     />
   </section>
 </template>
@@ -102,4 +112,59 @@
 import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
+const { gsap, ScrollTrigger } = useGsap();
+
+const sectionRef = ref(null);
+const titleRef = ref(null);
+const statsCardRef = ref(null);
+const stat1Ref = ref(null);
+const stat2Ref = ref(null);
+const card1Ref = ref(null);
+const card2Ref = ref(null);
+const imgRef = ref(null);
+
+onMounted(() => {
+  const tl = gsap.timeline({
+    defaults: { ease: "power3.out" },
+    scrollTrigger: { trigger: sectionRef.value, start: "top 75%" },
+  });
+
+  tl.fromTo(
+    titleRef.value,
+    { opacity: 0, x: -50 },
+    { opacity: 1, x: 0, duration: 0.7 },
+  )
+    .fromTo(
+      imgRef.value,
+      { opacity: 0, x: 50 },
+      { opacity: 1, x: 0, duration: 0.7 },
+      "<",
+    )
+    .fromTo(
+      statsCardRef.value,
+      { opacity: 0, y: 30 },
+      { opacity: 1, y: 0, duration: 0.6 },
+      "<0.3",
+    )
+    .fromTo(
+      [stat1Ref.value, stat2Ref.value],
+      { opacity: 0, scale: 0.6 },
+      {
+        opacity: 1,
+        scale: 1,
+        duration: 0.5,
+        stagger: 0.15,
+        ease: "back.out(1.5)",
+      },
+      "<0.2",
+    )
+    .fromTo(
+      [card1Ref.value, card2Ref.value],
+      { opacity: 0, y: 24 },
+      { opacity: 1, y: 0, duration: 0.5, stagger: 0.15 },
+      "<0.2",
+    );
+});
+
+onUnmounted(() => ScrollTrigger.getAll().forEach((t) => t.kill()));
 </script>

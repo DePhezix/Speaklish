@@ -1,2 +1,2 @@
-export * from "./useModal";
 export * from './useActiveSection'
+export * from './useGSAP'

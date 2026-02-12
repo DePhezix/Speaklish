@@ -1,16 +1,20 @@
 <template>
   <section
+    ref="sectionRef"
     class="container mx-auto flex flex-col py-[36px] px-[16px] 2xl:pt-[64px] 2xl:px-[100px] 2xl:pb-[100px] gap-[36px] items-center bg-clip-padding"
     id="price"
   >
     <h1
-      class="font-extrabold sf-display text-[36px] lg:text-[64px] leading-[100%]"
+      ref="titleRef"
+      class="opacity-0 font-extrabold sf-display text-[36px] lg:text-[64px] leading-[100%]"
     >
       {{ $t("price.title") }}
     </h1>
+
     <div class="w-full flex gap-[24px] lg:gap-[64px] justify-center flex-wrap">
       <div
-        class="flex-1 hover:ring-[#08DA83] transition-all duration-300 flex flex-col sm:min-w-[361px] xl:w-[503px] rounded-[36px] ring-[8px] lg:ring-[16px] ring-white/20 bg-white p-[24px] lg:p-[48px] gap-[12px] 2xl:gap-[24px] items-center"
+        ref="card1Ref"
+        class="opacity-0 flex-1 hover:ring-[#08DA83] transition-all duration-300 flex flex-col sm:min-w-[361px] xl:w-[503px] rounded-[36px] ring-[8px] lg:ring-[16px] ring-white/20 bg-white p-[24px] lg:p-[48px] gap-[12px] 2xl:gap-[24px] items-center"
       >
         <button
           disabled
@@ -44,8 +48,10 @@
           {{ $t("price.start") }}
         </NuxtLink>
       </div>
+
       <div
-        class="flex-1 hover:ring-[#08DA83] transition-all duration-300 flex flex-col sm:min-w-[361px] xl:w-[503px] rounded-[36px] ring-[8px] lg:ring-[16px] ring-white/20 bg-white p-[24px] lg:p-[48px] gap-[12px] 2xl:gap-[24px] items-center"
+        ref="card2Ref"
+        class="opacity-0 flex-1 hover:ring-[#08DA83] transition-all duration-300 flex flex-col sm:min-w-[361px] xl:w-[503px] rounded-[36px] ring-[8px] lg:ring-[16px] ring-white/20 bg-white p-[24px] lg:p-[48px] gap-[12px] 2xl:gap-[24px] items-center"
       >
         <button
           disabled
@@ -87,4 +93,37 @@
 import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
+const { gsap, ScrollTrigger } = useGsap();
+
+const sectionRef = ref(null);
+const titleRef = ref(null);
+const card1Ref = ref(null);
+const card2Ref = ref(null);
+
+onMounted(() => {
+  const tl = gsap.timeline({
+    defaults: { ease: "power4.in" },
+    scrollTrigger: { trigger: sectionRef.value, start: "top 80%" },
+  });
+
+  tl.fromTo(
+    titleRef.value,
+    { opacity: 0, y: 30 },
+    { opacity: 1, y: 0, duration: 0.6 },
+  )
+    .fromTo(
+      card1Ref.value,
+      { opacity: 0, x: -50 },
+      { opacity: 1, x: 0, duration: 0.7 },
+      "<0.2",
+    )
+    .fromTo(
+      card2Ref.value,
+      { opacity: 0, x: 50 },
+      { opacity: 1, x: 0, duration: 0.7 },
+      "<",
+    );
+});
+
+onUnmounted(() => ScrollTrigger.getAll().forEach((t) => t.kill()));
 </script>
