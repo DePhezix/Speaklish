@@ -34,7 +34,7 @@
     <img
       ref="phone"
       src="../assets/imgs/phone.avif"
-      class="z-[0] opacity-0 2xl:w-[608px] 2xl:h-[642px] w-[361px] h-[380px]"
+      class="z-[-1] opacity-0 2xl:w-[608px] 2xl:h-[642px] w-[361px] h-[380px]"
     />
   </section>
 </template>
