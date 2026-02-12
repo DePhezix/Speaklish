@@ -4,26 +4,35 @@
     id="howItWorks"
   >
     <HowItWorksStep :step="steps[0]" />
-    <img
+    <div
       ref="arrow1Ref"
-      src="../assets/svgs/arrow1.svg"
       class="opacity-0 w-[129px] h-[63px] lg:w-[277px] lg:h-[127px]"
-    />
+    >
+      <Arrow1 />
+    </div>
+
     <HowItWorksStep :step="steps[1]" />
-    <img
+    <div
       ref="arrow2Ref"
-      src="../assets/svgs/arrow2.svg"
       class="opacity-0 w-[129px] h-[63px] lg:w-[277px] lg:h-[127px]"
-    />
+    >
+      <Arrow2 />
+    </div>
+
     <HowItWorksStep :step="steps[2]" />
   </section>
 </template>
 
 <script setup lang="ts">
 import HowItWorksStep from "./howItWorksStep.vue";
+
+import Arrow1 from "../assets/svgs/arrow1.svg?component";
+import Arrow2 from "../assets/svgs/arrow2.svg?component";
+
 import Step1_2 from "../assets/imgs/step1_2.avif";
 import Step3_4 from "../assets/imgs/step3_4.avif";
 import Step5_6 from "../assets/imgs/step5_6.avif";
+
 import { useI18n } from "vue-i18n";
 import type { howItWorksStepType } from "~/types/frontend";
 
